@@ -3,9 +3,9 @@ using Microsoft.OpenApi.Models;
 using Pizzéria.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
 
-builder.Services.AddDbContext<PizzaEhodDB>(options =>
-    options.UseInMemoryDatabase("Item"));
+builder.Services.AddSqlite<PizzaEhodDB>(connectionString);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
