@@ -1,0 +1,62 @@
+# Fichiers de build .NET
+**/bin/
+**/obj/
+
+# Rider (JetBrains) specific files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Fichiers de logs
+*.log
+
+# VS Code (si jamais utilisé aussi)
+.vscode/
+
+# Fichiers de configuration locaux
+appsettings.Development.json
+
+# Fichiers générés par dotnet restore / NuGet
+project.lock.json
+project.assets.json
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+
+# Fichiers de test coverage / rapports
+TestResults/
+*.coverage
+*.coveragexml
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+*~ 
+
+# build / publish output
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+
+# Dossier de publication
+publish/
+
+# Fichiers HTTP de tests
+*.http
+
+# MacOS et Linux
+.DS_Store
+Thumbs.db
+
+# Autres fichiers spécifiques générés
+*.GeneratedMSBuildEditorConfig.editorconfig
+
